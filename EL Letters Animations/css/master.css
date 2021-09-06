@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.page {
+  background-color: #eee;
+  width: 750px;
+  height: 600px;
+  padding: 10px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.page div {
+  padding: 10px;
+}
+
+.E div,
+.L div {
+  background-color: #323234;
+}
+
+.E {
+  background-color: #eee;
+  display: grid;
+  grid-template: repeat(7, 1fr) / repeat(5, 1fr);
+}
+
+.e1 {
+  grid-row: span 7;
+}
+
+.e2 {
+  grid-column: span 4;
+}
+
+.e3 {
+  grid-row-start: 4;
+  grid-column: 2 / span 4;
+}
+
+.e4 {
+  grid-row-start: 7;
+  grid-column: 2 / span 4;
+}
+
+.L {
+  background-color: #eee;
+  padding: 10px;
+  display: grid;
+  grid-template: repeat(7, 1fr) / repeat(5, 1fr);
+}
+
+.L div {
+  z-index: 0;
+}
+
+.l1 {
+  grid-row: span 7;
+}
+
+.l2 {
+  grid-row: 7;
+  grid-column: 2 / span 4;
+}
+
+.Lmover {
+  background-color: #fea604;
+  transform: translate(-5px, 5px);
+  margin: 10px;
+  margin-bottom: 20px;
+  grid-column: 5;
+  grid-row: 7;
+  animation-name: Lmove;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Lmove {
+  10% {
+    transform: translate(-5px, 5px);
+  }
+  20% {
+    transform: translate(-276px, 5px);
+  }
+  30% {
+    transform: translate(-276px, -475px);
+  }
+  40% {
+    transform: translate(-276px, -475px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-276px, -475px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-276px, -475px);
+    opacity: 0;
+  }
+}
+
+.Emover {
+  background-color: orange;
+  transform: translate(-5px, -475px);
+  margin: 10px;
+  margin-bottom: 20px;
+  grid-column: 5;
+  grid-row: 7;
+  animation-name: Emove;
+  animation-duration: 10s;
+  animation-delay: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Emove {
+  10% {
+    transform: translate(-276px, -475px);
+  }
+  15% {
+    transform: translate(-276px, -235px);
+  }
+  20% {
+    transform: translate(-5px, -235px);
+  }
+  25% {
+    transform: translate(-276px, -235px);
+  }
+  30% {
+    transform: translate(-276px, 5px);
+  }
+  35% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(-276px, 5px);
+  }
+  45% {
+    transform: translate(-276px, -475px);
+  }
+  50% {
+    transform: translate(-5px, -475px);
+  }
+  100% {
+    transform: translate(-5px, -475px);
+  }
+}

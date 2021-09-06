@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+.page {
+  height: 80vh;
+  width: 76%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #fff 50%, #343a40 50%);
+  border-radius: 10px;
+}
+
+.content {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background: linear-gradient(to right, #fff 50%, #343a40 50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+img {
+  position: absolute;
+  transform: translateY(-5px);
+}

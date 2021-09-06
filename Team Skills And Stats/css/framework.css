@@ -1,0 +1,22 @@
+/* Strat My Framework */
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Making Padding For White Sections */
+.padding-w {
+  padding: var(--section-padding);
+}
+/* Making Padding For Light-Black => ("Gray") Sections */
+.padding-b {
+  background: var(--section-bg-color);
+  padding: var(--section-padding);
+}
+/* End My Framework */
+/* 
+I have A Way To Make It Better
+But I Don't Khow Is That A Best Pracic
+Or Not 
+I Will Leave To You
+*/

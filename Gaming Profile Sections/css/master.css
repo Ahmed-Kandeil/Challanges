@@ -1,0 +1,103 @@
+:root {
+  --red: rgb(233, 32, 99);
+  --green: rgb(0, 150, 136);
+  --blue: rgb(33, 150, 243);
+}
+* {
+  font-family: 'Cairo', sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+.info {
+  font-weight: 400;
+}
+.title {
+  color: #fff;
+  background: #607d8b;
+  font-weight: 700;
+  width: fit-content;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+span {
+  font-weight: 700;
+}
+.green {
+  color: var(--green);
+}
+.red {
+  color: var(--red);
+}
+.blue {
+  color: var(--blue);
+}
+.page {
+  background: #eee;
+  font-size: 14px;
+  padding: 15px 30px;
+  margin: 1px;
+}
+.page section {
+  background: #fff;
+  padding: 1em;
+  margin: 20px 0;
+}
+.page .profile {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.page .profile > * {
+  margin: 10px;
+}
+.page .profile .you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page .profile .you > * {
+  margin: 5px;
+}
+.page .profile .you img {
+  border: 5px solid #eee;
+  border-radius: 50%;
+}
+.page .profile .you .prograss {
+  background: #eee;
+  border-radius: 5px;
+  width: 100%;
+  height: 15px;
+  overflow: hidden;
+}
+.page .profile .you .prograss .percent {
+  background: var(--red);
+  width: 80%;
+  height: 100%;
+}
+.page .profile .about {
+  position: relative;
+}
+.page .profile .about > * {
+  margin-bottom: 15px;
+}
+.page .profile .about h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.page .profile .about p:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.page .points-log p {
+  margin: 10px auto;
+}
+.page .trophies .images {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}

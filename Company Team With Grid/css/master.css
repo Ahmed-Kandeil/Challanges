@@ -1,0 +1,81 @@
+.page {
+  background-color: #eee;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding: 10px;
+  display: grid;
+  grid-template: repeat(11, auto) / repeat(4, 1fr);
+  gap: 10px;
+}
+
+.page div {
+  padding: 10px;
+}
+
+.job {
+  color: #ccc;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.topic {
+  font-weight: bold;
+}
+
+.white {
+  background-color: white;
+  border-bottom: 2px solid #ff5722;
+}
+
+.black {
+  background-color: black;
+  color: white;
+  border-bottom: 2px solid #ff5722;
+}
+
+.content,
+.topic {
+  font-size: 18px;
+}
+
+.a1 {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+
+.a2 {
+  grid-row: span 3;
+}
+
+.a3 {
+  grid-row: span 9;
+}
+
+.a4 {
+  grid-row: span 6;
+}
+
+.a5 {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+
+.a6 {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+
+.a7 {
+  grid-row: span 2;
+}
+
+.a8 {
+  grid-row: span 2;
+}
+
+.a9 {
+  grid-row: span 2;
+}
+
+.a10 {
+  grid-row: span 2;
+}

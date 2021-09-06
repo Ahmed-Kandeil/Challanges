@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/master.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="page">
+      <form action="">
+        <div class="container">
+          <label class="required" for="username">Username</label><br />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Type Your Name in English Only"
+            required
+          />
+        </div>
+        <div class="container">
+          <label for="phone">Phone</label><br />
+          <input type="tel" name="phone-number" id="phone" />
+        </div>
+        <div class="container">
+          <label class="required" for="password">Password</label><br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Type a Complex Password"
+            required
+          />
+        </div>
+        <div class="container">
+          <label for="about">Brieft</label><br />
+          <textarea name="about" id="about"></textarea>
+        </div>
+        <div class="container">
+          <label class="required" for="e-mail">Email</label><br />
+          <input
+            type="email"
+            name="e-mail"
+            id="e-mail"
+            placeholder="Type a Valid email"
+            required
+          />
+        </div>
+        <br />
+        <input type="submit" value="Register" />
+      </form>
+    </section>
+  </body>
+</html>

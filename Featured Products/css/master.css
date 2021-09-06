@@ -1,0 +1,79 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.page {
+  width: 950px;
+  margin: auto;
+}
+.page .title {
+  color: #fff;
+  background: rgb(47, 102, 116);
+  font-weight: 400;
+  width: fit-content;
+  padding: 10px 10px 10px 12px;
+  margin: 3px;
+  margin-bottom: 20px;
+}
+.page .products {
+  display: flex;
+  justify-content: flex-end;
+}
+.page .products article {
+  border: 3px solid #ccc;
+  margin: 3px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.page .products article > * {
+  margin: 1px 1px 10px 1px;
+  position: relative;
+}
+.page .products article:nth-child(2)::before {
+  content: "Sale!";
+  color: #fff;
+  background: #f44336;
+  font-size: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  left: -13px;
+  z-index: 10;
+}
+.page .products article p {
+  color: #717171;
+  background: #fff;
+  width: fit-content;
+  padding: 0 5px;
+}
+.page .products article .info::after {
+  content: "";
+  background: #717171;
+  width: calc(100% - 10px);
+  height: 2px;
+  position: absolute;
+  top: 200%;
+  left: 5px;
+}
+.page .products article .praice {
+  font-weight: 600;
+}
+.page .products article:nth-child(2) .praice {
+  color: #ff5722;
+}
+.page .products article p span {
+  color: #717171;
+  font-size: smaller;
+  text-decoration: line-through;
+}
+/* #FF5722 */

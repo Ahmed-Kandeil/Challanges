@@ -1,0 +1,133 @@
+:root {
+  --FristColor: #2c6ccf;
+  --SecondColor: #cf2c2c;
+  --ThirdColor: #309e0e;
+  --FourthColor: #cd661a;
+}
+* {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.type {
+  width: 95%;
+  margin: 4em auto;
+}
+.type .title {
+  font-size: 3em;
+}
+.type .heading {
+  font-size: 2em;
+  width: fit-content;
+  margin-bottom: 2em;
+  position: relative;
+}
+.type .heading.h1 {
+  color: var(--FristColor);
+}
+.type .heading.h2 {
+  color: var(--SecondColor);
+}
+.type .heading.h3 {
+  color: var(--ThirdColor);
+}
+.type .heading.h4 {
+  color: var(--FourthColor);
+}
+.type .heading::after {
+  content: "";
+  width: 200%;
+  height: 2px;
+  position: absolute;
+  bottom: -20px;
+  left: 2px;
+}
+.type .heading.h1::after {
+  background: linear-gradient(to right, var(--FristColor) 49%, #aaa 49%);
+}
+.type .heading.h2::after {
+  background: linear-gradient(to right, var(--SecondColor) 49%, #aaa 49%);
+}
+.type .heading.h3::after {
+  background: linear-gradient(to right, var(--ThirdColor) 49%, #aaa 49%);
+}
+.type .heading.h4::after {
+  background: linear-gradient(to right, var(--FourthColor) 49%, #aaa 49%);
+}
+
+/* The Circle Shape */
+.type.t1 .heading::before,
+.type.t2 .heading::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: 2px;
+  bottom: -26.6px;
+}
+/* The Box Shape */
+.type.t2 .heading::before {
+  border-radius: 0%;
+}
+/* The ColorS */
+.type.t1 .heading.h1::before,
+.type.t2 .heading.h1::before {
+  background: var(--FristColor);
+}
+.type.t1 .heading.h2::before,
+.type.t2 .heading.h2::before {
+  background: var(--SecondColor);
+}
+.type.t1 .heading.h3::before,
+.type.t2 .heading.h3::before {
+  background: var(--ThirdColor);
+}
+.type.t1 .heading.h4::before,
+.type.t2 .heading.h4::before {
+  background: var(--FourthColor);
+}
+/* The Triangle Up Shape */
+.type.t3 .heading::before,
+.type.t4 .heading::before {
+  content: "";
+  border: 15px solid transparent;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 2px;
+  bottom: -19px;
+  z-index: -1000;
+}
+/* The ColorS */
+.type.t3 .heading.h1::before {
+  border-bottom-color: var(--FristColor);
+}
+.type.t3 .heading.h2::before {
+  border-bottom-color: var(--SecondColor);
+}
+.type.t3 .heading.h3::before {
+  border-bottom-color: var(--ThirdColor);
+}
+.type.t3 .heading.h4::before {
+  border-bottom-color: var(--FourthColor);
+}
+/* Triangle Down */
+.type.t4 .heading::before {
+  position: absolute;
+  left: 2px;
+  bottom: -19px;
+  z-index: -1000;
+}
+/* The ColorS */
+.type.t4 .heading.h1::before {
+  border-top-color: var(--FristColor);
+}
+.type.t4 .heading.h2::before {
+  border-top-color: var(--SecondColor);
+}
+.type.t4 .heading.h3::before {
+  border-top-color: var(--ThirdColor);
+}
+.type.t4 .heading.h4::before {
+  border-top-color: var(--FourthColor);
+}

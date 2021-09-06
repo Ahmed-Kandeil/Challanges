@@ -1,0 +1,167 @@
+/* Start Varables */
+:root {
+  /* The Main color */
+  --main-color: hsl(199, 98%, 48%);
+  /* Section Background Light-Black => ("Gray") */
+  --section-bg-color: hsl(0, 0%, 96%);
+  /* The Padding For Sections */
+  --section-padding: 50px;
+  /* The Header And Footer Padding */
+  --h-f-padding: calc(var(--section-padding) / 2);
+}
+/* End Varables */
+/* Start Globel Rule */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* The Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* The Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* The Large Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Globel Rule */
+/* Strat Header */
+header .container {
+  padding: var(--h-f-padding);
+}
+header .container .logo a {
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+header .container ul {
+  display: flex;
+  list-style: none;
+}
+header .container ul li:not(:first-child) {
+  margin-left: 15px;
+}
+/* End Header */
+/* Start Info Section */
+.info .container {
+  text-align: center;
+}
+.info .container h1 {
+  color: hsl(0, 0%, 0%);
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.info .container h1 span {
+  color: var(--main-color);
+}
+/* End Info Section */
+/* Start Features Section */
+.features .container .card {
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .features .container .card {
+    min-width: 100px;
+  }
+}
+.features .container .card img {
+  max-width: 25%;
+}
+.features .container .card h3 {
+  margin: 10px 0;
+}
+/* End Features Section */
+/* Start About Section */
+.about .container img {
+  max-width: calc(50% - 35px);
+  margin-right: 35px;
+}
+.about .container article h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+/* End About Section */
+/* Strat Services Section */
+.services .container .card {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  width: calc((100% / 3) - 20px);
+  padding: 20px;
+}
+.services .container .card:first-child {
+  background: hsl(0, 52%, 46%);
+}
+.services .container .card:nth-child(2) {
+  background: hsl(199, 62%, 35%);
+}
+.services .container .card:last-child {
+  background: hsl(167, 62%, 34%);
+}
+.services .container .card h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.services .container .card p {
+  font-size: 14px;
+}
+/* End Services Section */
+/* Start Skills Section */
+.skills .container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.skills .container .skill:not(:last-child) {
+  margin-bottom: 10px;
+}
+.skills .container .skill p {
+  text-align: right;
+  min-width: 75px;
+}
+.skills .container .skill .skill-bar {
+  background: hsl(0, 0%, 100%);
+  width: calc(100% - 85px);
+}
+.skills .container .skill .skill-bar .percent {
+  color: hsl(0, 0%, 100%);
+  background: var(--main-color);
+  text-align: right;
+  font-size: 14px;
+  padding: 7.5px;
+}
+/* End Skills Section */
+/* Start Footer */
+footer {
+  background: hsl(0, 0%, 20%);
+  padding: var(--h-f-padding);
+}
+footer .container p {
+  color: hsl(0, 0%, 100%);
+}
+footer .container p span {
+  color: var(--main-color);
+}
+/* End Footer */
